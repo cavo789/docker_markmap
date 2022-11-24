@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[1,2]},"v":"Visual Studio Code","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"<a href=\"#discovering\">Discovering Visual Studio Code</a>","c":[{"t":"heading","d":3,"p":{"lines":[3,4]},"v":"<a href=\"#discovering-installation\">Installation</a>"},{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"<a href=\"#discovering-shortcuts\">The first keyboard shortcuts to learn</a>"},{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"<a href=\"#discovering-settings\">Settings</a>"},{"t":"heading","d":3,"p":{"lines":[6,7]},"v":"<a href=\"#working-with-files\">Working with files and folders</a>","c":[{"t":"heading","d":4,"p":{"lines":[7,8]},"v":"<a href=\"#working-with-files-shortcuts\">Keyboard shortcuts</a>"}]},{"t":"heading","d":3,"p":{"lines":[8,9]},"v":"<a href=\"#traversal\">Code traversal - Navigation</a>","c":[{"t":"heading","d":4,"p":{"lines":[9,10]},"v":"<a href=\"#traversal-shortcuts\">Keyboard shortcuts</a>"},{"t":"heading","d":4,"p":{"lines":[10,11]},"v":"<a href=\"#traversal-select-first\">Select first</a>"}]},{"t":"heading","d":3,"p":{"lines":[11,12]},"v":"<a href=\"#snippets\">Snippets</a>","c":[{"t":"heading","d":4,"p":{"lines":[12,13]},"v":"<a href=\"#snippets-global\">Global</a>","c":[{"t":"heading","d":5,"p":{"lines":[13,14]},"v":"<a href=\"#snippets-built-in\">Built-in</a>"},{"t":"heading","d":5,"p":{"lines":[14,15]},"v":"<a href=\"#snippets-user-defined\">User-defined ones</a>"},{"t":"heading","d":5,"p":{"lines":[15,16]},"v":"<a href=\"#snippets-user-placeholders\">Make snippets configurable</a>"},{"t":"heading","d":5,"p":{"lines":[16,17]},"v":"<a href=\"#using-variables\">Using variables</a>"},{"t":"heading","d":5,"p":{"lines":[17,18]},"v":"<a href=\"#snippets-settings\">Settings</a>"},{"t":"heading","d":5,"p":{"lines":[18,19]},"v":"<a href=\"#snippets-extensions\">Extensions</a>"}]},{"t":"heading","d":4,"p":{"lines":[19,20]},"v":"<a href=\"#snippets-project-based\">Project-based</a>"},{"t":"heading","d":4,"p":{"lines":[20,21]},"v":"<a href=\"#snippets-generator\">Generator</a>"},{"t":"heading","d":4,"p":{"lines":[21,22]},"v":"<a href=\"#snippets-video\">Video tutorial</a>"}]},{"t":"heading","d":3,"p":{"lines":[22,23]},"v":"<a href=\"#terminal\">Using the built-in terminal</a>","c":[{"t":"heading","d":4,"p":{"lines":[23,24]},"v":"<a href=\"#terminal-extensions\">Extensions</a>"}]},{"t":"heading","d":3,"p":{"lines":[24,25]},"v":"<a href=\"#search\">Search</a>","c":[{"t":"heading","d":4,"p":{"lines":[25,26]},"v":"<a href=\"#save-the-search\">Save the search</a>"}]}]},{"t":"heading","d":2,"p":{"lines":[26,27]},"v":"<a href=\"#working-with-code\">Working with code</a>","c":[{"t":"heading","d":3,"p":{"lines":[27,28]},"v":"<a href=\"#working-with-code-shortcuts\">Keyboard shortcuts</a>","c":[{"t":"heading","d":4,"p":{"lines":[28,29]},"v":"<a href=\"#working-with-code-folding\">Code folding</a>"},{"t":"heading","d":4,"p":{"lines":[29,30]},"v":"<a href=\"#working-with-code-comments\">Comments</a>"}]}]},{"t":"heading","d":2,"p":{"lines":[31,32]},"v":"<a href=\"#bookmarks\">Bookmarks</a>","c":[{"t":"heading","d":3,"p":{"lines":[32,33]},"v":"<a href=\"#vs-code-can-do-that\">VS Code can do that</a>"},{"t":"heading","d":3,"p":{"lines":[33,34]},"v":"<a href=\"#vs-code-channel-on-youtube\">VS Code channel on youtube</a>"}]},{"t":"heading","d":2,"p":{"lines":[34,35]},"v":"<a href=\"#annex\">Annex</a>","c":[{"t":"heading","d":3,"p":{"lines":[35,36]},"v":"<a href=\"#list-of-extensions-i-use\">List of extensions I use</a>"}]},{"t":"heading","d":2,"p":{"lines":[36,37]},"v":"<a href=\"#trouble-shooting\">Trouble shooting</a>","c":[{"t":"heading","d":3,"p":{"lines":[37,38]},"v":"<a href=\"#git-integration-is-no-more-working-under-wsl\">Git integration is no more working under WSL</a>"}]},{"t":"heading","d":2,"p":{"lines":[38,39]},"v":"<a href=\"#license\">License</a><!-- table-of-contents - end -->"}]})</script>
+</body>
+</html>
